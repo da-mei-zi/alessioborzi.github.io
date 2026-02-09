@@ -1,4 +1,4 @@
-# Heng Zhang's Personal Homepage
+# Alessio Borzì's Personal Homepage
 
 This is a personal academic homepage based on a YAML configuration system with markdown content files.
 
@@ -76,10 +76,10 @@ This template is based on [Sen Li's academic homepage template](https://github.c
 
 ## 👤 Author
 
-**Heng Zhang**
-- Email: hengz@mail.ustc.edu.cn
-- GitHub: [@Hengz1231](https://github.com/Hengz1231)
-- Homepage: [Hengz.github.io](https://Hengz1231.github.io)
+**Alessio Borzì**
+- Email: alessioborzi.math (at) gmail.com
+- GitHub: [@AlessioBorzi](https://github.com/AlessioBorzi)
+- Homepage: [alessioborzi.github.io](https://alessioborzi.github.io)
 2. 修改研究兴趣（第68行）
 3. 添加你的预印本论文（第74-95行）
    - 每篇论文是一个 `<tr>` 行
