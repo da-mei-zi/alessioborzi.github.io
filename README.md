@@ -1,4 +1,4 @@
-# Alessio Borzì's Personal Homepage
+# Heng Zhang's Personal Homepage
 
 This is a personal academic homepage based on a YAML configuration system with markdown content files, presented as a modern single-page application.
 
@@ -41,7 +41,7 @@ Simply edit these markdown files with your information.
 
 Replace the following images in `static/assets/img/`:
 - `photo.png` - Your profile photo
-- `background.png` - Background image for the top section
+- `background.jpeg` - Background image for the top section
 
 ### 4. Update Links
 
@@ -76,7 +76,7 @@ This template is based on [Sen Li's academic homepage template](https://github.c
 
 ## 👤 Author
 
-**Alessio Borzì**
-- Email: alessioborzi.math (at) gmail.com
-- GitHub: [@AlessioBorzi](https://github.com/AlessioBorzi)
-- Homepage: [alessioborzi.github.io](https://alessioborzi.github.io)
+**Heng Zhang**
+- Email: hengz@mail.ustc.edu.cn
+- GitHub: [@Hengz1231](https://github.com/Hengz1231)
+- Homepage: [Hengz.github.io](https://Hengz1231.github.io)

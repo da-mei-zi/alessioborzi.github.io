@@ -1,51 +1,35 @@
 
-### Preprints
+For convenience, I do not show the journal acceptance or publication status of these articles, but only provide the arXiv links.
+Here is the paper I have posted on arXiv.
 
-1. **Realizability of matroid quotients**  
-   Alessio Borzì  
-   [arXiv](https://arxiv.org/abs/2403.03615)
+1 - With Kaizhe Chen and Shiping Liu. [arXiv:2409.06418](https://arxiv.org/abs/arXiv:2409.06418)
 
-2. **Linear Degenerate Tropical Flag Varieties**  
-   Alessio Borzì, Victoria Schleis  
-   [arXiv](https://arxiv.org/abs/2308.04193)
+  Curvature and local matchings of conference graphs and extensions.
+  
 
-3. **Set of independencies and Tutte polynomial of matroids over a domain**  
-   Alessio Borzì, Ivan Martino  
-   [arXiv](https://arxiv.org/abs/1909.00332)
+ 2 - With Kaizhe Chen, Chunyang Hu and Shiping Liu.  [arXiv:2410.21055](https://arxiv.org/abs/arXiv:2410.21055)
 
-### Publications
+  Ricci curvature, diameter and eigenvalues of amply regular graphs.
 
-1. **Tropical computations for toric intersection theory in Macaulay2**  
-   *Journal of Software for Algebra and Geometry, 2024*  
-   Alessio Borzì  
-   [arXiv](https://arxiv.org/abs/2209.13414) · [journal](https://doi.org/10.2140/jsag.2024.14.19) · [github](https://github.com/AlessioBorzi/TropicalToric)
 
-2. **The leading coefficient of Lascoux polynomials**  
-   *Discrete Mathematics, 2023*  
-   Alessio Borzì, Xiangying Chen, Harshit J. Motwani, Lorenzo Venturello, Martin Vodička  
-   [arXiv](https://arxiv.org/abs/2106.13104) · [journal](https://www.sciencedirect.com/science/article/abs/pii/S0012365X2200423X)
+3 - With Shiping Liu.  [arXiv:2505.04314](https://arxiv.org/abs/arXiv:2505.04314)
+  
+  Monotonic normalized heat diffusion for distance-regular graphs with classical parameters of diameter 3.
 
-3. **Weierstrass sets on finite graphs**  
-   *Electronic Journal of Combinatorics, 2022*  
-   Alessio Borzì  
-   [arXiv](https://arxiv.org/abs/2104.07121) · [journal](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i1p4)
 
-4. **Cyclotomic numerical semigroup polynomials with at most two irreducible factors**  
-   *Semigroup Forum, 2021*  
-   Alessio Borzì, Andrés Herrera-Poyatos, Pieter Moree  
-   [arXiv](https://arxiv.org/abs/2101.08823) · [journal](https://link.springer.com/article/10.1007%2Fs00233-021-10197-8)
+4 - With Kaizhe Chen.  [arXiv:2505.19704](https://arxiv.org/abs/arXiv:2505.19704)
 
-5. **Graded algebras with cyclotomic Hilbert series**  
-   *Journal of Pure and Applied Algebra, 2021*  
-   Alessio Borzì, Alessio D'Alì  
-   [arXiv](https://arxiv.org/abs/2005.09708) · [journal](https://www.sciencedirect.com/science/article/abs/pii/S0022404921001043)
+  Existence results for Tzitzeica equation via topological degree method on graphs.
 
-6. **Patterns on the numerical duplication by their admissibility degree**  
-   *Numerical Semigroups - Springer INdAM Series, 2020*  
-   Alessio Borzì  
-   [arXiv](https://arxiv.org/abs/1901.10571) · [journal](https://link.springer.com/chapter/10.1007/978-3-030-40822-0_2)
 
-7. **A characterization of the Arf property for quadratic quotients of the Rees algebra**  
-   *Journal of Algebra and its Applications, 2019*  
-   Alessio Borzì  
-   [arXiv](https://arxiv.org/abs/1806.04448) · [journal](https://www.worldscientific.com/doi/abs/10.1142/S0219498820501273?journalCode=jaa)
+5 - With Zhiqiang Wan.  [arXiv:2507.20142](https://arxiv.org/abs/arXiv:2507.20142)
+
+  Strichartz estimate for discrete Schrödinger equation on layered King's grid.
+
+6 - With Zhiqiang Wan.  [arXiv:2511.10358](https://arxiv.org/abs/arXiv:2511.10358)
+
+  Observable sets for free Schrödinger equation on combinatorial graphs.
+
+7 - With Zhiqiang Wan.  [arXiv:2512.22613](https://arxiv.org/abs/arXiv:2512.22613)
+
+  Dispersive estimates for discrete Klein-Gordon equations on one-dimensional lattice with quasi-periodic potentials.
