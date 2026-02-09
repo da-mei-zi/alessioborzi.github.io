@@ -1,53 +1,85 @@
-# 个人主页模板
+# Heng Zhang's Personal Homepage
 
-这是一个简洁美观的个人主页模板，适合学术研究人员、工程师、开发者等使用。
+This is a personal academic homepage based on a YAML configuration system with markdown content files.
 
-## 📋 模板特点
+## 📋 Features
 
-- ✅ 响应式设计，适配桌面和移动设备
-- ✅ 基于 Bootstrap 框架，美观易用
-- ✅ 包含多个页面：主页、研究、演讲、活动、教学、链接
-- ✅ 支持展示论文、演讲、项目等学术成果
-- ✅ 集成社交媒体图标（LinkedIn、GitHub、Google Scholar、arXiv）
-- ✅ 自动从 GitHub API 获取最后更新时间
+- ✅ Responsive design for desktop and mobile devices
+- ✅ Modern single-page application with smooth scrolling
+- ✅ YAML-based configuration for easy customization
+- ✅ Markdown support for content editing
+- ✅ Sections: Home, Awards, Experience, Publications
+- ✅ Mathematical equation support with MathJax
+- ✅ Bootstrap-based styling
 
-## 🚀 快速开始
+## 🚀 How to Customize
 
-### 1. 修改个人信息
+### 1. Edit Configuration File
 
-按照以下顺序修改各个文件中的内容：
+Edit `contents/config.yml` to update basic information:
 
-#### 主页 (index.html)
-打开 `index.html` 文件，找到带有中文注释的地方进行修改：
+```yaml
+title: Your Name's Homepage
+page-top-title: Your Name
+top-section-bg-text: Your motto or tagline
+home-subtitle: Your Name
+copyright-text: Copyright © 2026 Your Name
+```
 
-1. **页面标题和元数据** (第5-11行)
-   - 替换 `Your Name` 为你的名字
-   - 替换 `Your Title/Position` 为你的职位
-   - 替换 `your-username.github.io` 为你的 GitHub Pages 地址
+### 2. Edit Content Files
 
-2. **页面标题栏** (第34-36行)
-   - 替换 `你的名字` 为你的真实姓名
-   - 替换 `你的职位或身份` 为你的职位描述
+All content is stored in markdown files in the `contents/` directory:
 
-3. **个人简介** (第104-126行)
-   - 修改个人介绍文字
-   - 更新你的教育背景
-   - 更新你的工作经历
-   - 修改联系邮箱
+- `home.md` - Your introduction, contact information, and research interests
+- `awards.md` - Your awards and honors
+- `experience.md` - Your work and education experience
+- `publications.md` - Your research papers and publications
 
-4. **社交媒体链接** (第129-150行)
-   - 更新 LinkedIn 链接
-   - 更新 GitHub 链接
-   - 更新 Google Scholar 链接（如果没有可以删除）
-   - 更新 arXiv 链接（如果不需要可以删除）
+Simply edit these markdown files with your information.
 
-5. **最后更新脚本** (第72-95行)
-   - 替换 `your-username.github.io` 为你的仓库名
-   - 替换 `your-github-username` 为你的 GitHub 用户名
+### 3. Update Images
 
-#### 研究页面 (research.html)
+Replace the following images in `static/assets/img/`:
+- `photo.png` - Your profile photo
+- `background.jpeg` - Background image for the top section
 
-1. 修改页面标题和名字（第5行、第28-29行）
+### 4. Update Links
+
+Edit `index.html` to update footer links (lines 182-185):
+- GitHub profile link
+- License link
+
+## 📁 Directory Structure
+
+```
+.
+├── contents/           # Content files
+│   ├── config.yml     # Configuration
+│   ├── home.md        # Home section
+│   ├── awards.md      # Awards section
+│   ├── experience.md  # Experience section
+│   └── publications.md # Publications section
+├── static/            # Static assets
+│   ├── assets/        # Images and favicon
+│   ├── css/           # Stylesheets
+│   └── js/            # JavaScript files
+└── index.html         # Main HTML file
+```
+
+## 🌐 Deployment
+
+This website is designed to be deployed on GitHub Pages. Once you push your changes to the repository, GitHub Pages will automatically build and deploy your website.
+
+## 📝 License
+
+This template is based on [Sen Li's academic homepage template](https://github.com/senli1073/senli1073.github.io).
+
+## 👤 Author
+
+**Heng Zhang**
+- Email: hengz@mail.ustc.edu.cn
+- GitHub: [@Hengz1231](https://github.com/Hengz1231)
+- Homepage: [Hengz.github.io](https://Hengz1231.github.io)
 2. 修改研究兴趣（第68行）
 3. 添加你的预印本论文（第74-95行）
    - 每篇论文是一个 `<tr>` 行
