@@ -35,11 +35,7 @@ window.addEventListener('DOMContentLoaded', event => {
             const yml = jsyaml.load(text);
             Object.keys(yml).forEach(key => {
                 try {
-                    // Use textContent to prevent XSS attacks
-                    const element = document.getElementById(key);
-                    if (element) {
-                        element.textContent = yml[key];
-                    }
+                    document.getElementById(key).innerHTML = yml[key];
                 } catch {
                     console.log("Unknown id and value: " + key + "," + yml[key].toString())
                 }

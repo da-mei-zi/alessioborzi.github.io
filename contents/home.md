@@ -1,5 +1,5 @@
 
-I am currently a Ph.D. student at the School of Mathematical Sciences. I'd be hapyy to make friends with you and discuss math together. You can reach me by Email or QQ.
+I am currently a Ph.D. student at the School of Mathematical Sciences. I'd be happy to make friends with you and discuss math together. You can reach me by Email or QQ.
 
 #### Email  
 hengz@mail.ustc.edu.cn

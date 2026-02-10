@@ -1,3 +1,4 @@
+
 For convenience, I do not show the journal acceptance or publication status of these articles, but only provide the arXiv links.
 Here is the paper I have posted on arXiv.
 
@@ -32,8 +33,3 @@ Here is the paper I have posted on arXiv.
 7 - With Zhiqiang Wan.  [arXiv:2512.22613](https://arxiv.org/abs/arXiv:2512.22613)
 
   Dispersive estimates for discrete Klein-Gordon equations on one-dimensional lattice with quasi-periodic potentials.
-
-
-
-
-  

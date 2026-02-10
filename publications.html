@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Heng Zhang's Academic Homepage" />
+    <meta name="description" content="Heng Zhang's Academic Homepage - Publications" />
     <meta name="author" content="Heng Zhang" />
     <title id="title"></title>
 
@@ -39,32 +39,22 @@
 
     <!-- Mathematics -->
     <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
         MathJax = {
             tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
+                packages: {},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: false,
+                processEnvironments: true,
+                processRefs: true,
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+                tags: 'all',
+                tagSide: 'right',
+                tagIndent: '0.8em',
+                useLabelIds: true,
+                maxMacros: 10000,
+                maxBuffer: 5 * 1024,
+                formatError: (jax, err) => jax.formatError(err)
             }
         };
     </script>
@@ -99,7 +89,7 @@
                         <a class="nav-link me-lg-3" href="experience.html">EXPERIENCE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="publications.html">PUBLICATIONS</a>
+                        <a class="nav-link me-lg-3 active" href="publications.html">PUBLICATIONS</a>
                     </li>
                 </ul>
             </div>
@@ -124,16 +114,16 @@
     </div>
     <!-- Photo -->
 
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <!-- Publications -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
         <div class="container px-5">
             <header>
-                <h2 id="home-subtitle"> </h2>
+                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
             </header>
-            <div class="main-body" id="home-md"></div>
+            <div class="main-body" id="publications-md"></div>
         </div>
     </section>
-    <!-- Home -->
+    <!-- Publications  -->
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
