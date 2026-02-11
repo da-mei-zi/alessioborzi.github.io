@@ -87,8 +87,8 @@ Example 示例:
   `active` 类会使导航项在其对应页面上变为蓝色
 - You must update ALL 6 files to keep navigation consistent across pages
   必须更新所有6个文件以保持页面间导航的一致性
-- The navigation styling is controlled by CSS in `static/css/styles.css` (line ~10886-10892)
-  导航样式由 `static/css/styles.css` 中的CSS控制（第10886-10892行）
+- The navigation styling is controlled by CSS selector `#mainNav .navbar-nav .nav-item .nav-link` in `static/css/styles.css`
+  导航样式由 `static/css/styles.css` 中的CSS选择器 `#mainNav .navbar-nav .nav-item .nav-link` 控制
 
 ### 4. Modify Page Titles 修改页面标题
 
