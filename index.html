@@ -78,7 +78,21 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
+    <!-- Navigation Bar 导航栏 -->
+    <!-- 
+        IMPORTANT: This navigation menu appears on ALL pages (index.html, teaching.html, talks.html, travel.html, publications.html, others.html)
+        重要提示：此导航菜单出现在所有页面上
+        
+        To modify navigation items 修改导航项目:
+        1. Change the text between <a> tags to update the menu label
+           修改 <a> 标签之间的文本来更新菜单标签
+        2. Change the href attribute to update the link destination
+           修改 href 属性来更新链接目标
+        3. The "active" class makes the nav item blue when on that page
+           "active" 类会使当前页面的导航项变为蓝色
+        4. You must update ALL 6 HTML files to keep navigation consistent
+           必须更新所有6个HTML文件以保持导航一致性
+    -->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="index.html"></a>
@@ -89,21 +103,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <!-- Home link 主页链接 -->
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="index.html">HOME</a>
                     </li>
+                    <!-- Teaching link 教学链接 -->
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="teaching.html">TEACHING</a>
                     </li>
+                    <!-- Talks link 演讲链接 -->
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="talks.html">TALKS</a>
                     </li>
+                    <!-- Activities link (formerly TRAVEL) 活动链接（原为TRAVEL） -->
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="travel.html">TRAVEL</a>
+                        <a class="nav-link me-lg-3" href="travel.html">Activities</a>
                     </li>
+                    <!-- Research link (formerly PUBLICATIONS) 研究链接（原为PUBLICATIONS） -->
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="publications.html">PUBLICATIONS</a>
+                        <a class="nav-link me-lg-3" href="publications.html">Research</a>
                     </li>
+                    <!-- Others link 其他链接 -->
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="others.html">OTHERS</a>
                     </li>

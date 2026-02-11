@@ -37,13 +37,121 @@ All content is stored in markdown files in the `contents/` directory:
 
 Simply edit these markdown files with your information.
 
-### 3. Update Images
+### 3. Modify Navigation Menu 修改导航菜单
+
+The navigation menu appears at the top of every page and contains links like HOME, TEACHING, TALKS, Activities, Research, and OTHERS.
+
+**Files to Edit 需要编辑的文件:**
+To change navigation items, you must update ALL 6 HTML files:
+要修改导航项，必须更新所有6个HTML文件：
+
+- `index.html` (line ~102-106)
+- `teaching.html` (line ~86-96)
+- `talks.html` (line ~86-96)
+- `travel.html` (line ~86-96)
+- `publications.html` (line ~86-96)
+- `others.html` (line ~86-96)
+
+**How to Change Navigation Text 如何修改导航文本:**
+
+1. Find the `<nav>` section in each HTML file (around line 82-113)
+   在每个HTML文件中找到 `<nav>` 部分（大约在第82-113行）
+
+2. Look for the navigation items in `<li class="nav-item">` tags
+   查找 `<li class="nav-item">` 标签中的导航项
+
+3. Change the text between `<a>` tags to update the menu label
+   修改 `<a>` 标签之间的文本来更新菜单标签
+
+Example 示例:
+```html
+<!-- Before 修改前 -->
+<li class="nav-item">
+    <a class="nav-link me-lg-3" href="travel.html">TRAVEL</a>
+</li>
+
+<!-- After 修改后 -->
+<li class="nav-item">
+    <a class="nav-link me-lg-3" href="travel.html">Activities</a>
+</li>
+```
+
+**Important Notes 重要提示:**
+- The `active` class makes the navigation item blue on its corresponding page
+  `active` 类会使导航项在其对应页面上变为蓝色
+- You must update ALL 6 files to keep navigation consistent across pages
+  必须更新所有6个文件以保持页面间导航的一致性
+- The navigation styling is controlled by CSS in `static/css/styles.css` (line ~10886-10892)
+  导航样式由 `static/css/styles.css` 中的CSS控制（第10886-10892行）
+
+### 4. Modify Page Titles 修改页面标题
+
+Each page has a large blue title at the top (e.g., "Activities", "Research").
+
+**Files to Edit 需要编辑的文件:**
+
+- `travel.html` - Activities page title (line ~127)
+  活动页面标题（第127行）
+- `publications.html` - Research page title (line ~127)
+  研究页面标题（第127行）
+- `teaching.html` - Teaching page title
+  教学页面标题
+- `talks.html` - Talks page title
+  演讲页面标题
+- `others.html` - Others page title
+  其他页面标题
+
+**How to Change Page Title 如何修改页面标题:**
+
+Find the section header with `<h2 id="xxx-subtitle">` tag and update the text:
+找到带有 `<h2 id="xxx-subtitle">` 标签的部分标题并更新文本：
+
+Example 示例:
+```html
+<!-- Before 修改前 -->
+<h2 id="travel-subtitle"><i class="bi bi-airplane-fill"></i> TRAVEL </h2>
+
+<!-- After 修改后 -->
+<h2 id="travel-subtitle"><i class="bi bi-airplane-fill"></i> Activities </h2>
+```
+
+### 5. Customize Blue Color 自定义蓝色
+
+The blue color used for navigation and titles is defined in CSS:
+导航和标题使用的蓝色在CSS中定义：
+
+**File 文件:** `static/css/main.css`
+
+**Lines to Edit 需要编辑的行:**
+- Line 5: `--h-title-color:#3948d2;` - Blue color for page titles 页面标题的蓝色
+- Line 9: `border-bottom: solid 2px var(--bs-blue);` - Navigation border 导航边框
+
+**File 文件:** `static/css/styles.css`
+
+**Lines to Edit 需要编辑的行:**
+- Line 10888: Navigation hover color 导航悬停颜色
+- Line 10891: Navigation active color 导航激活颜色
+
+Example 示例:
+```css
+/* Change the blue color 修改蓝色 */
+:root{
+    --h-title-color:#3948d2;  /* Change this hex color value 修改此十六进制颜色值 */
+}
+
+/* Navigation active state 导航激活状态 */
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #2937f0;  /* Change this hex color value 修改此十六进制颜色值 */
+}
+```
+
+### 6. Update Images
 
 Replace the following images in `static/assets/img/`:
 - `photo.png` - Your profile photo
 - `background.jpeg` - Background image for the top section
 
-### 4. Update Links
+### 7. Update Links
 
 Edit `index.html` to update footer links (lines 182-185):
 - GitHub profile link
@@ -53,18 +161,70 @@ Edit `index.html` to update footer links (lines 182-185):
 
 ```
 .
-├── contents/           # Content files
-│   ├── config.yml     # Configuration
-│   ├── home.md        # Home section
-│   ├── awards.md      # Awards section
-│   ├── experience.md  # Experience section
-│   └── publications.md # Publications section
-├── static/            # Static assets
-│   ├── assets/        # Images and favicon
-│   ├── css/           # Stylesheets
-│   └── js/            # JavaScript files
-└── index.html         # Main HTML file
+├── contents/           # Content files 内容文件
+│   ├── config.yml     # Configuration 配置
+│   ├── home.md        # Home section 主页部分
+│   ├── awards.md      # Awards section 奖项部分
+│   ├── experience.md  # Experience section 经历部分
+│   └── publications.md # Publications section 出版物部分
+├── static/            # Static assets 静态资源
+│   ├── assets/        # Images and favicon 图片和图标
+│   ├── css/           # Stylesheets 样式表
+│   │   ├── main.css   # Custom styles (colors, layout) 自定义样式（颜色、布局）
+│   │   └── styles.css # Bootstrap styles Bootstrap样式
+│   └── js/            # JavaScript files JavaScript文件
+├── index.html         # Home page 主页
+├── teaching.html      # Teaching page 教学页面
+├── talks.html         # Talks page 演讲页面
+├── travel.html        # Activities page 活动页面
+├── publications.html  # Research page 研究页面
+└── others.html        # Others page 其他页面
 ```
+
+## 🎨 Understanding the Structure 理解结构
+
+### HTML Files HTML文件
+Each page has the same structure:
+每个页面都有相同的结构：
+
+1. **Navigation Bar 导航栏** (lines ~82-113)
+   - Contains menu items that link to different pages
+   - 包含链接到不同页面的菜单项
+
+2. **Top Section 顶部区域** (lines ~115-122)
+   - Background image with overlay
+   - 带遮罩的背景图片
+
+3. **Photo Avatar 头像照片** (lines ~124-130)
+   - Profile photo displayed on the page
+   - 页面上显示的个人照片
+
+4. **Main Content 主要内容** (lines ~132+)
+   - Page-specific content loaded from markdown files
+   - 从markdown文件加载的特定页面内容
+
+### CSS Files CSS文件
+
+- **main.css**: Custom styles including:
+  - Blue color definitions (line 5)
+  - Navigation border (line 9)
+  - Page title colors (line 46)
+  - Section backgrounds (lines 58-64)
+
+- **styles.css**: Bootstrap framework styles including:
+  - Navigation styles (lines 10882-10892)
+  - Responsive design rules
+  - Component styles
+
+## 🔧 Quick Reference Guide 快速参考指南
+
+| What to Change 要修改什么 | Files to Edit 编辑的文件 | Line Numbers 行号 |
+|------------------------|---------------------|----------------|
+| Navigation menu text<br/>导航菜单文本 | All 6 HTML files<br/>所有6个HTML文件 | ~86-96 |
+| Page titles<br/>页面标题 | Specific HTML file<br/>特定HTML文件 | ~127 |
+| Blue colors<br/>蓝色 | main.css, styles.css | 5, 46, 10888, 10891 |
+| Profile photo<br/>头像 | static/assets/img/photo.png | N/A |
+| Content<br/>内容 | contents/*.md | N/A |
 
 ## 🌐 Deployment
 
