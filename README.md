@@ -132,24 +132,24 @@ The blue color used for navigation and titles is defined in CSS:
 
 **File 文件:** `static/css/main.css`
 
-**Lines to Edit 需要编辑的行:**
-- Line 5: `--h-title-color:#3948d2;` - Blue color for page titles 页面标题的蓝色
-- Line 9: `border-bottom: solid 2px var(--bs-blue);` - Navigation border 导航边框
+**What to Edit 需要编辑的内容:**
+- CSS variable: `--h-title-color:#3948d2;` - Blue color for page titles 页面标题的蓝色
+- CSS rule: `.header { border-bottom: solid 2px var(--bs-blue); }` - Navigation border 导航边框
 
 **File 文件:** `static/css/styles.css`
 
-**Lines to Edit 需要编辑的行:**
-- Line 10888: Navigation hover color 导航悬停颜色
-- Line 10891: Navigation active color 导航激活颜色
+**What to Edit 需要编辑的内容:**
+- Selector: `#mainNav .navbar-nav .nav-item .nav-link:hover` - Navigation hover color 导航悬停颜色
+- Selector: `#mainNav .navbar-nav .nav-item .nav-link.active` - Navigation active color 导航激活颜色
 
 Example 示例:
 ```css
-/* Change the blue color 修改蓝色 */
+/* Change the blue color in main.css 在main.css中修改蓝色 */
 :root{
     --h-title-color:#3948d2;  /* Change this hex color value 修改此十六进制颜色值 */
 }
 
-/* Navigation active state 导航激活状态 */
+/* Change navigation active state in styles.css 在styles.css中修改导航激活状态 */
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #2937f0;  /* Change this hex color value 修改此十六进制颜色值 */
 }
@@ -163,9 +163,8 @@ Replace the following images in `static/assets/img/`:
 
 ### 7. Update Links
 
-Edit `index.html` to update footer links (lines 182-185):
-- GitHub profile link
-- License link
+To update footer links, search for the `<footer>` section in `index.html` and modify the links as needed.
+要更新页脚链接，请在 `index.html` 中搜索 `<footer>` 部分并根据需要修改链接。
 
 ## 📁 Directory Structure
 
@@ -218,13 +217,13 @@ Each page has the same structure:
 ### CSS Files CSS文件
 
 - **main.css**: Custom styles including:
-  - Blue color definitions (line 5)
-  - Navigation border (line 9)
-  - Page title colors (line 46)
-  - Section backgrounds (lines 58-64)
+  - Blue color definitions: CSS variable `--h-title-color`
+  - Navigation border: `.header` class styling
+  - Page title colors: `section header h2` styling
+  - Section backgrounds: `.bg-gradient-primary-to-secondary-*` classes
 
 - **styles.css**: Bootstrap framework styles including:
-  - Navigation styles (lines 10882-10892)
+  - Navigation styles: `#mainNav .navbar-nav .nav-item .nav-link` selectors
   - Responsive design rules
   - Component styles
 
@@ -234,7 +233,7 @@ Each page has the same structure:
 |------------------------|---------------------|----------------|
 | Navigation menu text<br/>导航菜单文本 | All 6 HTML files<br/>所有6个HTML文件 | Search for `<nav>` tag<br/>搜索 `<nav>` 标签 |
 | Page titles<br/>页面标题 | Specific HTML file<br/>特定HTML文件 | Search for `id="xxx-subtitle"`<br/>搜索 `id="xxx-subtitle"` |
-| Blue colors<br/>蓝色 | main.css, styles.css | Lines: 5, 46, 10888, 10891<br/>行号：5, 46, 10888, 10891 |
+| Blue colors<br/>蓝色 | main.css, styles.css | Search for: `--h-title-color`, `#mainNav .nav-link.active`<br/>搜索：`--h-title-color`, `#mainNav .nav-link.active` |
 | Profile photo<br/>头像 | static/assets/img/photo.png | N/A |
 | Content<br/>内容 | contents/*.md | N/A |
 
