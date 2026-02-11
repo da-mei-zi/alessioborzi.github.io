@@ -43,6 +43,6 @@ Fudan-USTC Spectral Geometry Conference
 📍 Fudan University, Shanghai, China
 
 
-## Academic Exchange
+## Academic Visit
 
 Content to be added.
