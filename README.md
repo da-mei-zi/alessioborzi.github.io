@@ -45,17 +45,23 @@ The navigation menu appears at the top of every page and contains links like HOM
 To change navigation items, you must update ALL 6 HTML files:
 要修改导航项，必须更新所有6个HTML文件：
 
-- `index.html` (navigation section: lines ~96-133)
-- `teaching.html` (navigation section: lines ~80-103)
-- `talks.html` (navigation section: lines ~80-103)
-- `travel.html` (navigation section: lines ~80-103)
-- `publications.html` (navigation section: lines ~80-103)
-- `others.html` (navigation section: lines ~80-103)
+- `index.html`
+- `teaching.html`
+- `talks.html`
+- `travel.html`
+- `publications.html`
+- `others.html`
+
+**How to Find the Navigation Section 如何找到导航部分:**
+- Search for `<nav class="header navbar` in each file
+- 在每个文件中搜索 `<nav class="header navbar`
+- The navigation section is between `<nav>` and `</nav>` tags
+- 导航部分在 `<nav>` 和 `</nav>` 标签之间
 
 **How to Change Navigation Text 如何修改导航文本:**
 
-1. Find the `<nav>` section in each HTML file (around lines 96-133 in index.html, 80-103 in other files)
-   在每个HTML文件中找到 `<nav>` 部分（index.html约在第96-133行，其他文件约在第80-103行）
+1. Find the `<nav>` section in each HTML file by searching for `<nav class="header navbar`
+   在每个HTML文件中搜索 `<nav class="header navbar` 找到 `<nav>` 部分
 
 2. Look for the navigation items in `<li class="nav-item">` tags
    查找 `<li class="nav-item">` 标签中的导航项
@@ -90,16 +96,20 @@ Each page has a large blue title at the top (e.g., "Activities", "Research").
 
 **Files to Edit 需要编辑的文件:**
 
-- `travel.html` - Activities page title (line 132)
-  活动页面标题（第132行）
-- `publications.html` - Research page title (line 132)
-  研究页面标题（第132行）
+- `travel.html` - Activities page title
+  活动页面标题
+- `publications.html` - Research page title
+  研究页面标题
 - `teaching.html` - Teaching page title
   教学页面标题
 - `talks.html` - Talks page title
   演讲页面标题
 - `others.html` - Others page title
   其他页面标题
+
+**How to Find the Page Title 如何找到页面标题:**
+- Search for `<h2 id="xxx-subtitle">` in the file (e.g., `id="travel-subtitle"` or `id="publications-subtitle"`)
+- 在文件中搜索 `<h2 id="xxx-subtitle">`（例如 `id="travel-subtitle"` 或 `id="publications-subtitle"`）
 
 **How to Change Page Title 如何修改页面标题:**
 
@@ -187,19 +197,21 @@ Edit `index.html` to update footer links (lines 182-185):
 Each page has the same structure:
 每个页面都有相同的结构：
 
-1. **Navigation Bar 导航栏** (lines ~82-113)
+1. **Navigation Bar 导航栏** (inside `<nav>` tag)
    - Contains menu items that link to different pages
+   - Location: between `<nav>` and `</nav>` tags
    - 包含链接到不同页面的菜单项
+   - 位置：在 `<nav>` 和 `</nav>` 标签之间
 
-2. **Top Section 顶部区域** (lines ~115-122)
+2. **Top Section 顶部区域** (class `top-section`)
    - Background image with overlay
    - 带遮罩的背景图片
 
-3. **Photo Avatar 头像照片** (lines ~124-130)
+3. **Photo Avatar 头像照片** (id `avatar`)
    - Profile photo displayed on the page
    - 页面上显示的个人照片
 
-4. **Main Content 主要内容** (lines ~132+)
+4. **Main Content 主要内容** (inside `<section>` tag)
    - Page-specific content loaded from markdown files
    - 从markdown文件加载的特定页面内容
 
@@ -218,11 +230,11 @@ Each page has the same structure:
 
 ## 🔧 Quick Reference Guide 快速参考指南
 
-| What to Change 要修改什么 | Files to Edit 编辑的文件 | Line Numbers 行号 |
+| What to Change 要修改什么 | Files to Edit 编辑的文件 | How to Find 如何查找 |
 |------------------------|---------------------|----------------|
-| Navigation menu text<br/>导航菜单文本 | All 6 HTML files<br/>所有6个HTML文件 | ~86-96 |
-| Page titles<br/>页面标题 | Specific HTML file<br/>特定HTML文件 | ~127 |
-| Blue colors<br/>蓝色 | main.css, styles.css | 5, 46, 10888, 10891 |
+| Navigation menu text<br/>导航菜单文本 | All 6 HTML files<br/>所有6个HTML文件 | Search for `<nav>` tag<br/>搜索 `<nav>` 标签 |
+| Page titles<br/>页面标题 | Specific HTML file<br/>特定HTML文件 | Search for `id="xxx-subtitle"`<br/>搜索 `id="xxx-subtitle"` |
+| Blue colors<br/>蓝色 | main.css, styles.css | Lines: 5, 46, 10888, 10891<br/>行号：5, 46, 10888, 10891 |
 | Profile photo<br/>头像 | static/assets/img/photo.png | N/A |
 | Content<br/>内容 | contents/*.md | N/A |
 
